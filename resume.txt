@@ -1,0 +1,183 @@
+
+\documentclass[a4paper,8pt]{article}
+
+\usepackage{parskip} 
+\usepackage{hologo}
+\usepackage{fontspec}
+
+%other packages for formatting
+\RequirePackage{color}
+\RequirePackage{graphicx}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage[scale=0.9, top=.4in, bottom=.4in]{geometry}
+
+%tabularx environment
+\usepackage{tabularx}
+
+%for lists within experience section
+\usepackage{enumitem}
+
+% centered version of 'X' col. type
+\newcolumntype{C}{>{\centering\arraybackslash}X} 
+
+%to prevent spillover of tabular into next pages
+\usepackage{supertabular}
+\usepackage{tabularx}
+\newlength{\fullcollw}
+\setlength{\fullcollw}{0.42\textwidth}
+
+%custom \section
+\usepackage{titlesec}				
+\usepackage{multicol}
+\usepackage{multirow}
+
+%CV Sections inspired by: 
+%http://stefano.italians.nl/archives/26
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
+\titlespacing{\section}{1pt}{2pt}{2pt}
+
+%for publications
+\usepackage[style=authoryear,sorting=ynt, maxbibnames=2]{biblatex}
+
+%Setup hyperref package, and colours for links
+\usepackage[unicode, draft=false]{hyperref}
+\color[HTML]{110223}%{1C033C}
+\addbibresource{citations.bib}
+\setlength\bibitemsep{1em}
+
+%for social icons
+\usepackage{fontawesome5}
+% \usepackage{times}
+
+% For underline
+\usepackage[normalem]{ulem}
+
+\setmainfont{Arial}  % Set it to whatever you like
+
+\begin{document}
+
+% non-numbered pages
+\pagestyle{empty} 
+
+
+\begin{tabularx}{\linewidth}{@{} C @{}}
+\color[HTML]{1C033C} \Huge{Muxtorov Inomjon} \\[6pt]
+\\
+\textcolor[HTML]{371e77}{\underline{\href{mailto:muxtorovinomjon0227@gmail.com}{\raisebox{-0.05\height}{\faEnvelope} muxtorovinomjon0227@gmail.com}} $|$}
+\textcolor[HTML]{371e77}{\underline{\href{https://github.com/muxtorovinomjon0227}{\raisebox{-0.05\height}{\faGithub} @muxtorovinomjon0227}} $|$}
+\textcolor[HTML]{371e77}{\underline{\href{https://www.linkedin.com/in/inomjon-muxtorov-55719b248/}{\raisebox{-0.05\height}{\faLinkedin} LinkedIn}}}
+\textcolor[HTML]{371e77}{\href{tel:+998911565408}{\raisebox{-0.05\height}{\faMobile} +99891 156 54 08}}
+\end{tabularx}
+
+% Education
+\section{Education}
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\color[HTML]{1C033C} \textbf{Tashkent State Transport University (TSTU)} & \hfill \color[HTML]{371e77} Sep. 2019 - Jun. 2023 \\
+\color[HTML]{371e77}B.S. Ground Transport Systems and Their Operation (by Transport Types)  \textit{} \\
+\multicolumn{0}{@{}X@{}}{}
+\end{tabularx}
+
+
+%Experience
+\section{Work Experience}
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\color[HTML]{1C033C} \textbf{\uline{\href{https://technounit.uz/}{"Technounit - GROUP" Co LTD}}} \hfill \color[HTML]{371e77} Jul. 2023 - Present \\[4pt]
+\color[HTML]{371e77}\textbf{\textit{Flutter developer}}\
+\hfill \color[HTML]{4B28A4} \textit{
+% Dart, Flutter, Bloc, Clean Architecture, Stream, SIP, WebRTC, CRM, GitLab, GitHub
+} \\[5pt]
+\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=2em, itemsep=2pt]
+        \item Start a new project, creating a project architecture, making animations in the application, improving the perfect performance of the application, bug fixes, call audio recording, manage audio streams and publish the application to the AppStore and PlayStore.
+        \item Experience seamless business communication and enhanced customer relationships with aloVoice Dialer. Connect your sales teams, streamline your operations, and integrate with your CRM effortlessly.
+    \end{itemize}
+     % \color[HTML]{1C033C} \textit{\uline{\href{https://play.google.com/store/apps/details?id=com.technounit.alovoice}{Android: Play market}}}   
+     % \color[HTML]{1C033C} \textit{\uline{\href{https://apps.apple.com/us/app/alovoice-dialer/id6463775543?platform=iphone}{Ios: App Store}}}
+     % \color[HTML]{1C033C} \textit{\uline{\href{https://cld.alovoice.uz/}{Web: cld.alovoice.uz}}}
+\end{minipage}
+\end{tabularx}
+
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{\uline{{TeleDoctor, MChJ (XMed)}}} \hfill \color[HTML]{371e77} May. 2022 - Jun. 2023 \\[4pt]
+\color[HTML]{371e77}\textbf{\textit{Flutter developer}}\ \hfill \color[HTML]{4B28A4} \textit{
+% Dart, Flutter, Bloc, WebSocket, RestApi, JitsiMeet, Firebase, Deeplink, GitHub
+} \\[5pt]
+\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=2em, itemsep=2pt]
+        \item Contributing to Xmed, project improvement, adding new features, Optimizing application performance and bug fixes.
+        \item XMed – online doctor appointment system where you get medical consultation without leaving your home.
+        \item XMed is the first platform for remote delivery of medical services in Uzbekistan using telecommunication technologies. Consultations of practicing doctors via the Internet - via chat or video communication.
+    \end{itemize}
+    % \color[HTML]{1C033C} \textit{\uline{\href{https://play.google.com/store/apps/details?id=com.telehealth.xmed}{Android: Play market}}}   
+    %  \color[HTML]{1C033C} \textit{\uline{\href{https://apps.apple.com/uz/developer/xmed/id1580909768}{Ios: App Store}}}
+    %  \color[HTML]{1C033C} \textit{\uline{\href{https://xmed.uz/}{Web: Xmed.uz}}}
+\end{minipage}
+\end{tabularx}
+
+
+% \begin{tabularx}{\linewidth}{ @{}l r@{} }
+% \color[HTML]{1C033C} \textbf{Universal Scientific Industrial Co., Ltd.} \hfill \color[HTML]{371e77} Mar. 2023 - Jun. 2023 \\[4pt]
+% \color[HTML]{371e77}\textbf{\textit{Software Engineering Intern}} \hfill \color[HTML]{4B28A4} \textit{PHP, JavaScript, SQL Server, HTML, CSS, Bootstrap, jQuery} \\[5pt]
+% \begin{minipage}[t]{\linewidth}
+%     \begin{itemize}[nosep,after=\strut, leftmargin=2em, itemsep=2pt]
+%         \item Handled overtime requests and approvals for 2,000+ employees by developing internal back-end systems with PHP.
+%         \item Displayed graphs and logs in web interfaces of 6,000+ monthly requests using HTML, JavaScript, and Bootstrap.
+%         \item Reduced reports loading times from 10 to 3 seconds, enhancing SQL queries by up to 60\%.
+%     \end{itemize}
+%     \end{minipage}
+% \end{tabularx}
+
+% Projects
+\section{Projects}
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\color[HTML]{1C033C} \textbf{\uline{\href{https://xmed.uz/}{XMed}}} \hfill \color[HTML]{371e77} May. 2022 - Jun. 2023 \\[4pt]
+\color[HTML]{371e77}\textbf{\textit{XMed - Online Med Consultation}} \hfill \color[HTML]{4B28A4} \textit{Dart, Flutter, Bloc, WebSocket, RestApi, JitsiMeet, Firebase, Deeplink} \\[5pt]
+\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=2em, itemsep=2pt]
+        \item Project made with Flutter framework. Online doctor appointment system where you get medical consultation without leaving your home.
+        \item Connecting people with doctors without queuing and waiting, getting quick and quality advice.
+    \end{itemize}
+     \color[HTML]{1C033C} \textit{\uline{\href{https://play.google.com/store/apps/details?id=com.telehealth.xmed}{Android: Play market}}}   
+     \color[HTML]{1C033C} \textit{\uline{\href{https://apps.apple.com/uz/developer/xmed/id1580909768}{Ios: App Store}}}
+    \end{minipage}
+\end{tabularx}
+
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\color[HTML]{1C033C} \textbf{\uline{\href{https://cld.alovoice.uz/}{AloVoice Dialer}}} \hfill \color[HTML]{371e77} Jul. 2023 - Present \\[4pt]
+\color[HTML]{371e77}\textbf{\textit{AloVoice: Business calls and CRM}} \hfill \color[HTML]{4B28A4} \textit{Dart, Flutter, Bloc, Clean Architecture, Stream, SIP, WebRTC, CRM} \\[5pt]
+\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=2em, itemsep=2pt]
+        \item Making network calls and communicating with team members, Optimizing business operations, and gathering and storing data using SIP protocols.
+        \item Making network calls using Dart/Flutter. Using SIP protocol and WebRTC, the application can read contacts and call logs, select audio devices and record call sounds.
+    \end{itemize}
+    \color[HTML]{1C033C} \textit{\uline{\href{https://play.google.com/store/apps/details?id=com.technounit.alovoice}{Android: Play market}}}   
+     \color[HTML]{1C033C} \textit{\uline{\href{https://apps.apple.com/us/app/alovoice-dialer/id6463775543?platform=iphone}{Ios: App Store}}}
+    \end{minipage}
+\end{tabularx}
+
+% Leadership and Volunteering
+% \section{Leadership and Volunteering}
+% \begin{tabularx}{\linewidth}{ @{}l r@{} }
+% \color[HTML]{1C033C} \textbf{Club de Algoritmia GDA} \hfill \color[HTML]{371e77} Jun. 2023 - Ongoing \\[5pt]
+% \color[HTML]{371e77}\textbf{\textit{Board of Directors}} \\[5pt]
+% \begin{minipage}[t]{\linewidth}
+%     \begin{itemize}[nosep,after=\strut, leftmargin=2em, itemsep=2pt]
+%         \item Guiding a community of 550+ CS students in their professional development, technical skills and interest in tech.
+%         \item Orchestrating workshops, coding sessions, and events to enhance skills and encourage continuous learning.
+%     \end{itemize}
+% \end{minipage}
+% \end{tabularx}
+
+\section{Technical Skills}
+\color[HTML]{1C033C}\textbf{Languages:} \\[2pt]
+\color[HTML]{371e77} \hspace*{4ex} Dart, Flutter\\[3pt]
+\color[HTML]{1C033C}\textbf{Technologies \& Tools:} \\[2pt]
+\color[HTML]{371e77} \hspace*{4ex} Flutter, Dart, Bloc, Provider MVVM, Cubit, GetX, RestApi, WebSocket, Firebase, SharedPrefrense, Hive, Sqflite, Clean Architecture, SOLID, AppStore, PlayStore, WebDeploy, GitHub, GitLab, Windows, MacOs\\[3pt]
+
+% \color[HTML]{1C033C}\section{Languages}
+% \color[HTML]{371e77}\textbf{Uzbek - Native} \\[2pt]
+% \color[HTML]{371e77}\textbf{English - Intermediate} \\[2pt]
+% \color[HTML]{371e77}\textbf{Russian - Enhanced Intermediate} \\[2pt]
+
+
+\end{document}
